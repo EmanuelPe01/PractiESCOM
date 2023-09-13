@@ -1,74 +1,71 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PractiESCOM</title>
-</head>
-<body>
-    <div class="container center grey-text text-lighten-5">
-        <h1>Practi<span style="font-weight: bold;">ESCOM</span></h1>
-        <h3>Hola, ¿En qué podemos ayudarte?</h3>
-    </div>
-    <div class="container-fluid">
-        <div class="row center">
-            <div class="col s3">
-                <a href="html/transferencias.html">
-                    <div class="option">
-                        <p>Transferencias</p>
-                    </div>
-                </a>
-                <a href="html/retiros.html">
-                    <div class="option">
-                        <p>Retiro en efectivo</p>
-                    </div>
-                </a>
-                <a href="html/actualizar_nip.html">
-                    <div class="option">
-                        <p>Actualización de NIP</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col s6">
-                <!-- Aquí va algo, puede ser una imagen o de plano un login -->
-            </div>
-            <div class="col s3">
-                <a href="html/depositos.html">
-                    <div class="option">
-                        <p>Depósitos</p>
-                    </div>
-                </a>
-                <a href="html/pagos.html">
-                    <div class="option">
-                        <p>Pagos a servicios</p>
-                    </div>
-                </a>
-                <a href="html/consultar_saldo.html">
-                    <div class="option">
-                        <p>Consulta de saldo</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>   
-    <footer class="page-footer blue darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col s6">
-                    <h3>Practi<span style="font-weight: bold;">ESCOM</span></h3>
-                </div>
-                <div class="col s6">
-                    <p class="flow-text right">
-                        El banco de los estudiantes
-                    </p>
-                </div>
-            </div>
-        </div>
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="header__heading">
+        Practi<span class="text-bold">ESCOM</span>
+      </h1>
+      <h2 class="header__subheading">Hola, ¿En qué podemos ayudarte?</h2>
+    </header>
+    <main class="main-menu">
+      <div class="buttons">
+        <a class="button" href="html/transferencias.html">
+          <div class="option">
+            <p>Transferencias</p>
+          </div>
+        </a>
+        <a class="button" href="html/retiros.html">
+          <div class="option">
+            <p>Retiro en efectivo</p>
+          </div>
+        </a>
+        <a class="button" href="html/actualizar_nip.html">
+          <div class="option">
+            <p>Actualización de NIP</p>
+          </div>
+        </a>
+      </div>
+      <div class="col s6">
+        <!-- Aquí va algo, puede ser una imagen o de plano un login -->
+      </div>
+      <div class="buttons">
+        <a class="button" href="html/depositos.html">
+          <div class="option">
+            <p>Depósitos</p>
+          </div>
+        </a>
+        <a class="button" href="html/pagos.html">
+          <div class="option">
+            <p>Pagos a servicios</p>
+          </div>
+        </a>
+        <a class="button" href="html/consultar_saldo.html">
+          <div class="option">
+            <p>Consulta de saldo</p>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <h2>Practi<span class="text-bold">ESCOM</span></h2>
+        <p>El banco de los estudiantes</p>
+      </div>
     </footer>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  </body>
 </html>
