@@ -32,8 +32,29 @@
                     </div>
                 </a>
             </div>
-            <div class="col s6">
-                <!-- Aquí va algo, puede ser una imagen o de plano un login -->
+            <div class="col s6 main-screen">
+                <img src="assets/main.svg" alt="">
+               <div class="form">
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Indentificate</p>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="no_cuenta" type="text" class="validate">
+                            <label for="no_cuenta">Número de cuenta</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="nip" type="text" class="validate">
+                            <label for="nip">NIP</label>
+                        </div>
+                        <div class="col s12">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">
+                                Iniciar sesión
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+               </div>
             </div>
             <div class="col s3">
                 <a href="html/depositos.html">
@@ -54,21 +75,18 @@
             </div>
         </div>
     </div>   
-    <footer class="page-footer blue darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col s6">
-                    <h3>Practi<span style="font-weight: bold;">ESCOM</span></h3>
-                </div>
-                <div class="col s6">
-                    <p class="flow-text right">
-                        El banco de los estudiantes
-                    </p>
-                </div>
-            </div>
+    <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+          <div class="container">
+            <span style="font-size: 25px;">
+                Practi<span style="font-weight: bold;">ESCOM</span>
+            </span>
+            <span class="right">
+                El banco de los estudiantes
+            </span>
+          </div>
         </div>
-    </footer>
-
+      </footer>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
