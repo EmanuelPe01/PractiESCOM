@@ -10,6 +10,7 @@
   --bg-200: #1f2b3e;
   --bg-300: #374357;
   --secondary-100: #ab0b0b;
+  --secondary-200: #6e0606;
 }
 
 *,
@@ -81,10 +82,15 @@ img {
 
 .button--cancel {
   background-color: var(--secondary-100);
+  color: var(--text-100);
 }
 
 .button:hover {
   background-color: var(--accent-200);
+}
+
+.button--cancel:hover {
+  background-color: var(--secondary-200);
 }
 
 .buttons {
