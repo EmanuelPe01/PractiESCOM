@@ -21,29 +21,28 @@
     <main class="main-content main-content--no-menu container">
       <form class="form" action="./operacion_exitosa.html">
         <div class="form__field">
-          <label class="form__label" for="txtNIP"
+          <label class="form__label" for="txtCuenta"
             >Numero de cuenta o CLABE Interbancaria</label
           >
           <input
             class="form__input"
             type="text"
-            name="txtNIP"
-            id="txtNIP"
-            maxlength="4"
+            name="txtCuenta"
+            id="txtCuenta"
+            maxlength="16"
             pattern="\d*"
             placeholder="Ingresa número de cuenta o CLABE Interbancaria a transferir"
             required
           />
         </div>
         <div class="form__field">
-          <label class="form__label" for="txtNIP">Monto</label>
+          <label class="form__label" for="txtMonto">Monto</label>
           <input
             class="form__input"
             type="text"
-            name="txtNIP"
-            id="txtNIP"
-            maxlength="4"
-            pattern="\d*"
+            name="txtMonto"
+            id="txtMonto"
+            pattern="\d*.\d*"
             placeholder="Ingresa monto a transferir"
             required
           />
