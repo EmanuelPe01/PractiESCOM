@@ -159,6 +159,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .form__field,
@@ -179,4 +180,22 @@ img {
   gap: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+/** Servicios **/
+.servicios {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.servicios__item {
+  background-color: var(--text-200);
+  border-radius: 1rem;
+  max-width: 20rem;
+  display: grid;
+  padding: 2rem;
+  place-items: center;
+  flex: 1;
 }
