@@ -1,30 +1,66 @@
-<!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="../css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transferir efectivo</title>
-</head>
-<body>
-    
-    <footer class="page-footer blue darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col s6">
-                    <h3>Practi<span style="font-weight: bold;">ESCOM</span></h3>
-                </div>
-                <div class="col s6">
-                    <p class="flow-text right">
-                        El banco de los estudiantes
-                    </p>
-                </div>
-            </div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Título</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h1>Realiza tus <span class="text-bold">Transferencias</span></h1>
+      <!-- <p>Hola, ¿En qué podemos ayudarte?</p>  -->
+      <!-- Este es opcional -->
+    </header>
+    <main class="main-content main-content--no-menu container">
+      <form class="form">
+        <div class="form__field">
+          <label class="form__label" for="txtNIP"
+            >Numero de cuenta o CLABE Interbancaria</label
+          >
+          <input
+            class="form__input"
+            type="text"
+            name="txtNIP"
+            id="txtNIP"
+            maxlength="4"
+            pattern="\d*"
+            placeholder="Ingresa tu nuevo NIP"
+            required
+          />
         </div>
+        <div class="form__field">
+            <label class="form__label" for="txtNIP"
+              >Monto</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              name="txtNIP"
+              id="txtNIP"
+              maxlength="4"
+              pattern="\d*"
+              placeholder="Ingresa tu nuevo NIP"
+              required
+            />
+          </div>
+        <div class="form__buttons">
+          <a href="../index.html" class="button button--cancel">Cancelar</a>
+          <button type="submit" class="button">Confirmar</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <h2>Practi<span class="text-bold">ESCOM</span></h2>
+        <p>El banco de los estudiantes</p>
+      </div>
     </footer>
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  </body>
 </html>
