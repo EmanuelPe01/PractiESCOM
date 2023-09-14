@@ -1,28 +1,77 @@
-<!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="../css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pago de servicios</title>
-</head>
-<body>
-    
-    <footer class="page-footer blue darken-4">
-        <div class="footer-copyright">
-          <div class="container">
-            <span style="font-size: 25px;">
-                Practi<span style="font-weight: bold;">ESCOM</span>
-            </span>
-            <span class="right">
-                El banco de los estudiantes
-            </span>
-          </div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagos de servicios</title>
+  </head>
+  <body>
+    <header class="header container">
+      <h1>Paga <span class="text-bold">tus servicios</span></h1>
+      <!-- <p>"Subtítulo"</p>  -->
+      <!-- Este es opcional -->
+    </header>
+    <main class="main-content main-content--no-menu container">
+      <!-- Contenido en el main -->
+      <div class="servicios">
+        <div class="servicios__item">
+          <img src="../img/cfe_logo.png" alt="Logo de CFE" />
         </div>
-    </footer>
+        <div class="servicios__item">
+          <img src="../img/sky_logo.png" alt="Logo de SKY" />
+        </div>
+        <div class="servicios__item">
+          <img src="../img/telmex_logo.png" alt="Logo de Telmex" />
+        </div>
+      </div>
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+      <form class="form">
+        <div class="form__field">
+          <label class="form__label" for="txtServicio"
+            >Numero de cuenta o teléfono</label
+          >
+          <input
+            class="form__input"
+            type="text"
+            name="txtServicio"
+            id="txtServicio"
+            maxlength="16"
+            pattern="\d*"
+            placeholder="Ingresa numero de cuenta o teléfono"
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label for="txtMonto" class="form__label">Monto a pagar</label>
+          <input
+            class="form__input"
+            type="number"
+            name="txtMonto"
+            id="txtMonto"
+            maxlength="16"
+            pattern="\d*"
+            placeholder="Ingresa el monto a pagar"
+            required
+          />
+        </div>
+        <div class="form__buttons">
+          <a href="../index.html" class="button button--cancel">Cancelar</a>
+          <button type="submit" class="button">Pagar</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <h2>Practi<span class="text-bold">ESCOM</span></h2>
+        <p>El banco de los estudiantes</p>
+      </div>
+    </footer>
+  </body>
 </html>

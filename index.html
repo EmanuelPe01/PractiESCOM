@@ -1,92 +1,67 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PractiESCOM</title>
-</head>
-<body>
-    <div class="container center grey-text text-lighten-5">
-        <h1>Practi<span style="font-weight: bold;">ESCOM</span></h1>
-        <h3>Hola, ¿En qué podemos ayudarte?</h3>
-    </div>
-    <div class="container-fluid">
-        <div class="row center">
-            <div class="col s3">
-                <a href="html/transferencias.html">
-                    <div class="option">
-                        <p>Transferencias</p>
-                    </div>
-                </a>
-                <a href="html/retiros.html">
-                    <div class="option">
-                        <p>Retiro en efectivo</p>
-                    </div>
-                </a>
-                <a href="html/actualizar_nip.html">
-                    <div class="option">
-                        <p>Actualización de NIP</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col s6 main-screen">
-                <img src="assets/main.svg" alt="">
-               <div class="form">
-                    <div class="row">
-                        <div class="col s12">
-                            <p>Indentificate</p>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="no_cuenta" type="text" class="validate">
-                            <label for="no_cuenta">Número de cuenta</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="nip" type="text" class="validate">
-                            <label for="nip">NIP</label>
-                        </div>
-                        <div class="col s12">
-                            <button class="btn waves-effect waves-light" type="submit" name="action">
-                                Iniciar sesión
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </div>
-               </div>
-            </div>
-            <div class="col s3">
-                <a href="html/depositos.html">
-                    <div class="option">
-                        <p>Depósitos</p>
-                    </div>
-                </a>
-                <a href="html/pagos.html">
-                    <div class="option">
-                        <p>Pagos a servicios</p>
-                    </div>
-                </a>
-                <a href="html/consultar_saldo.html">
-                    <div class="option">
-                        <p>Consulta de saldo</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>   
-    <footer class="page-footer blue darken-4">
-        <div class="footer-copyright">
-          <div class="container">
-            <span style="font-size: 25px;">
-                Practi<span style="font-weight: bold;">ESCOM</span>
-            </span>
-            <span class="right">
-                El banco de los estudiantes
-            </span>
+  </head>
+  <body>
+    <header class="header container">
+      <h1>Practi<span class="text-bold">ESCOM</span></h1>
+      <p>Hola, ¿En qué podemos ayudarte?</p>
+    </header>
+    <main class="main-content">
+      <div class="buttons">
+        <a class="button button--large" href="html/transferencias.html">
+          <div class="option">
+            <p>Transferencias</p>
           </div>
-        </div>
-      </footer>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+        </a>
+        <a class="button button--large" href="html/retiros.html">
+          <div class="option">
+            <p>Retiro en efectivo</p>
+          </div>
+        </a>
+        <a class="button button--large" href="html/actualizar_nip.html">
+          <div class="option">
+            <p>Actualización de NIP</p>
+          </div>
+        </a>
+      </div>
+      <div class="imagen-fondo">
+        <img src="./img/mobile.svg" alt="Seguridad móvil con PractiESCOM" />
+      </div>
+      <div class="buttons">
+        <a class="button button--large" href="html/depositos.html">
+          <div class="option">
+            <p>Depósitos</p>
+          </div>
+        </a>
+        <a class="button button--large" href="html/pagos.html">
+          <div class="option">
+            <p>Pagos a servicios</p>
+          </div>
+        </a>
+        <a class="button button--large" href="html/consultar_saldo.html">
+          <div class="option">
+            <p>Consulta de saldo</p>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <h2>Practi<span class="text-bold">ESCOM</span></h2>
+        <p>El banco de los estudiantes</p>
+      </div>
+    </footer>
+  </body>
 </html>
